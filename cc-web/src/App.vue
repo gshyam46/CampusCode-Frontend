@@ -1,17 +1,60 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="CampusCode logo" src="./assets/logo.png" />
+  <nav>
+    <RouterLink to="/"> Welcome</RouterLink>
+    <RouterLink to="/signup"> Signup</RouterLink>
+    <RouterLink to="/login"> Login</RouterLink>
+    <button @click="handleSignOut" v-if="isLoggedIn">Log out</button>
+  </nav>
+  <router-view />
+  <FooterSection />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FooterSection from "./components/FooterSection.vue";
+import { onMounted, ref } from "vue";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import router from "./router";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    FooterSection,
+  },
+  data() {
+    return {
+      isLoggedIn: false, // Initialize isLoggedIn as false
+    };
+  },
+  methods: {
+    handleSignOut() {
+      const auth = getAuth(); // Get auth instance here
+
+      // Sign out and handle the promise
+      signOut(auth)
+        .then(() => {
+          // Update isLoggedIn and navigate to the home page
+          this.isLoggedIn = false;
+          router.push("/");
+        })
+        .catch((error) => {
+          console.error("Sign out error:", error);
+        });
+    },
+  },
+  mounted() {
+    const auth = getAuth();
+
+    // Listen for authentication state changes
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        this.isLoggedIn = true; // User is logged in
+      } else {
+        this.isLoggedIn = false; // User is logged out
+      }
+    });
+  },
+};
 </script>
 
 <style>
