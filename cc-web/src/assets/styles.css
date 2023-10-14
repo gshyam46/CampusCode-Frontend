@@ -1,0 +1,597 @@
+
+/* ----------------Login Page styles---------------- */
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+  }
+
+
+/* -----------------App Styling------------------------ */
+#app {
+  font-family: "Poppins";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+
+
+
+/* Navbar styling */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding:10px;
+  background-color: #2a2a2a; /* Set your preferred background color */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a professional look */
+}
+.home-sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding:10px;
+  background-color: #2a2a2a; /* Set your preferred background color */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a professional look */
+  align-items: center;
+  display: flex;
+  justify-content: center; 
+
+
+}
+nav{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+/* Navigation styles */
+#navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  color: #fff;
+}
+#navbar a {
+  color: white;
+  text-decoration: none; 
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; 
+
+}
+
+#navbar li {
+  margin-right: 20px;
+}
+
+/* Active link styles */
+#navbar ul li a.active {
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 2px solid white; /* Add a transparent border */
+  transition: border-color 0.3s ease-in; /* Add a smooth transition */
+}
+
+/* Style for the active link when hovered */
+#navbar ul li a:hover {
+  font-weight: 600;
+}
+
+/* Logo styles */
+.nav-logo {
+  max-width: 200px;
+}
+
+/* --------------------Account menu ---------------- */
+.account-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.account-menu {
+  position: relative; /* Set the parent to relative */
+  display: flex;
+  align-items: center;
+}
+
+.account-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.account-img{
+  max-height: 50px;
+  max-width: 50px;
+  padding-left: 5px;
+}
+
+/* Add styling for the dropdown */
+.account-menu .dropdown {
+  position: absolute;
+  top: 100%; /* Adjust the position below the account button */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); 
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  font: white;
+  min-width: 150px;
+  z-index: 1;
+  border-radius: 5px;
+}
+.logout-button{
+  color: white;
+}
+.account-menu .dropdown-logout {
+  position: absolute;
+  top: 100%; /* Adjust the position below the account button */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); 
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  min-width: 150px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+
+
+.account-menu .dropdown button{
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  width: 100%;
+  font: white;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #434343;
+  background-color: #000000;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  
+}
+
+.account-menu .dropdown-logout a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #434343;
+  background-color: #000000;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  
+}
+
+.account-menu .dropdown button:last-child{
+  border: none;
+  font-weight: 600;
+}
+.account-menu .dropdown-logout a:last-child {
+  border: none;
+}
+
+.account-menu .dropdown button:hover{
+  background-color: #383838;
+}
+.account-menu .dropdown-logout a:hover {
+  background-color: #383838;
+}
+
+/* ----------footer section ---------------- */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+ .logo{
+  width:180px;
+ }
+
+.about-column h4,
+.newsletter h4 {
+  font-size: 18px;
+  padding-bottom: 15px;
+  color: white;
+  font-weight: 700;
+}
+
+.footer-link {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  padding: 2px;
+  margin-bottom: 5px;
+  transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.footer-link:hover {
+  color: green; /* Change color to green on hover */
+}
+
+.newsletter {
+  text-align: left;
+}
+
+.email {
+  width: 70%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px 0;
+  color: #333; /* Input text color */
+  background-color: #fff; /* Input background color */
+}
+
+.subscribe-button {
+  background-color: #249901;
+  color: white;
+  padding:10px;
+  white-space: nowrap;
+  border-radius: 5px;
+  margin-left:5px ;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for button background */
+}
+
+.subscribe-button:hover {
+  background-color: #00dc28; /* Change background color to blue on hover */
+}
+
+
+/* ------------welcome page-------------- */
+
+.welcome-page {
+  text-align: center;
+  margin-top: 100px; /* Adjust the margin as needed */
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.signup-button,
+.login-button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 0 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-button:hover,
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Google signup styling */
+.divider{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.beforeSpan{
+  position: absolute;
+  content: 'Before';
+  top: 50%;
+  z-index: 1;
+  height: 1px;
+  width: 40%;
+  background: #6c9acf4d;
+}
+
+.orSpan{
+  background: #ffffff; 
+  height: 20px; 
+  width: 24px;
+  display: inline-block; 
+  position: relative; 
+  z-index: 2; 
+  color: #1d1d1d66;
+  text-align: center;
+}
+
+
+.google-signin-button{
+  background-color: #9bcbe75c;
+  color: #000000c1;
+  padding: 10px 20px;
+  border: 1px solid navy;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+
+
+
+/* -----------------sign up---------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.logo-img{
+  width: 100px;
+}
+.button {
+  background: #2c81fb;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+.custom-toast {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: -webkit-fill-available;
+  z-index: 9999;
+  color: #245408;
+  background-color: #d1e7dd;
+  padding: 10px;
+  border-radius: 5px;
+  border: #245408 solid 0.5px;
+  font-weight: 450;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  font-size: 0.85rem;
+}
+
+.form-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.form-header {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 16px; */
+}
+.form-group {
+  display: block;
+  /* margin-bottom: 12px; */
+}
+
+.hover-fcn {
+  display: flex;
+  align-items: center;
+}
+
+.tooltiptext {
+  position: absolute;
+  width: 80%;
+  max-width: 400px;
+  display: none;
+  background-color: #fff;
+  color: #151414;
+  padding: 15px;
+  z-index: 1;
+  border-radius: 15px;
+  margin-top: 18rem;
+  margin-left: 5rem;
+}
+
+.p-icon:hover + .tooltiptext {
+  display: block;
+}
+.pass-info {
+  font-size: 0.75rem;
+  color: #151414;
+  padding: 2px 0;
+  margin: 0;
+}
+.tooltiptext ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.875rem;
+  padding-bottom: 16px;
+}
+.tooltiptext li {
+  font-size: 0.75rem;
+}
+.p-icon{
+  height:15px;
+  width:15px;
+  cursor: pointer;
+  padding-left: 3px;
+}
+.password-input {
+  position: relative;
+}
+.password-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust this value to change the horizontal position */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.text-danger {
+  font-size: 0.75rem;
+  color: red;
+}
+.input-field {
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 12px;
+  /* margin-top: 6px; */
+  border: 1px solid #6c9acf4d;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+}
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #2c81fb;
+  color: #ffffff;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+}
+.signup-text {
+  color: #1d1d1d;
+  font-size: 0.75rem;
+}
+.forgot-pass-link {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.875rem;
+  text-decoration-line: underline;
+}
+.sub-heading {
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.sign-in {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #2c81fb;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+.form {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  width: 25.4375rem;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px #e7e7e7;
+  border-radius: 1rem;
+}
+.description-para {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.signupform {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-label {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.description-label {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}

@@ -33,7 +33,7 @@
       </div>
     </nav>
   </header>
-  <h1>Home</h1>
+  <h1>Study Materials</h1>
   <router-view />
 </template>
 
